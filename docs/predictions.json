@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T23:14:10.083575+00:00",
+  "generated_at": "2026-11-22T23:22:27.474448+00:00",
   "run_date": "2026-11-23",
   "fixture_date": "2026-11-23",
   "predictions": [
@@ -16,8 +16,8 @@
       "pick": "home",
       "confidence": "medium",
       "factors": [
-        "Home side rated 94 Elo points stronger (incl. home edge)",
-        "Away defense concedes less (1.7 ga/g) than home scores (1.1 gf/g)"
+        "المضيف أقوى بـ 94 نقطة إيلو (شاملة أفضلية اللعب على أرضه)",
+        "دفاع الضيف يستقبل أقل (1.7) مما يسجّل المضيف (1.1)"
       ],
       "status": "predicted"
     },
@@ -34,7 +34,7 @@
       "pick": "away",
       "confidence": "medium",
       "factors": [
-        "Away side rated 59 Elo points stronger (incl. home edge)"
+        "الضيف أقوى بـ 59 نقطة إيلو (شاملة أفضلية اللعب على أرضه)"
       ],
       "status": "predicted"
     },
@@ -51,15 +51,15 @@
       "pick": "home",
       "confidence": "low",
       "factors": [
-        "Home side rated 59 Elo points stronger (incl. home edge)",
-        "Home form better over last 5 (1.8 vs 1.0 pts/game)",
-        "Home attack (1.7 gf/g) vs away defense (1.2 ga/g)"
+        "المضيف أقوى بـ 59 نقطة إيلو (شاملة أفضلية اللعب على أرضه)",
+        "فورما المضيف أفضل في آخر 5 مباريات (1.8 مقابل 1.0 نقطة لكل مباراة)",
+        "هجوم المضيف (1.7 هدف/مباراة) أمام دفاع الضيف (1.2 هدف/مباراة)"
       ],
       "status": "predicted"
     }
   ],
   "warnings": [],
   "summary": [
-    "3 matches predicted across 3 leagues. Strongest lean: Monza vs Fiorentina - Fiorentina at 53%."
+    "3 مباريات متوقعة عبر 3 دوريات. أقوى ترجيح: مونزا ضد فيورنتينا - فيورنتينا بنسبة 53%."
   ]
 }

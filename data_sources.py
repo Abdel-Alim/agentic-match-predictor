@@ -158,11 +158,11 @@ def fetch_fixtures(
     if day_df.empty:
         future = df[(df["date"].dt.date > day) & (df["date"].dt.date <= horizon_end)]
         if future.empty:
-            return [], day.isoformat(), ["no fixtures today and none within the lookahead window"]
+            return [], day.isoformat(), ["لا توجد مباريات اليوم ولا ضمن نافذة البحث القادمة"]
         chosen = future["date"].min().date()
         day_df = df[df["date"].dt.date == chosen]
         notes.append(
-            f"no fixtures on {day.isoformat()}; showing next matchday {chosen.isoformat()}"
+            f"لا توجد مباريات يوم {day.isoformat()}؛ يتم عرض الجولة التالية {chosen.isoformat()}"
         )
 
     fixtures = [

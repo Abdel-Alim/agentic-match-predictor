@@ -22,6 +22,7 @@ import pandas as pd
 
 import data_sources
 import model as model_mod
+from arabic import team_ar
 from config import (
     CONFIDENCE_HIGH,
     CONFIDENCE_MEDIUM,
@@ -54,7 +55,7 @@ def scout_agent(state: dict) -> dict:
         # source unreachable -> retry against the local cache before giving up
         try:
             fixtures, date_used, notes = data_sources.fetch_fixtures(day, use_cache=True)
-            notes.append(f"live source failed ({exc}); used cached fixtures sheet")
+            notes.append(f"فشل المصدر المباشر ({exc})؛ تم استخدام قائمة المباريات المخزّنة")
         except data_sources.FetchError as exc2:
             state.update(fixtures=[], fixture_date=state["run_date"], scout_notes=[str(exc2)], degraded=True)
             _log(state, f"scout: fixture source unreachable: {exc2}")
@@ -72,7 +73,7 @@ def analyst_agent(state: dict) -> dict:
     """Build history, replay team state, and decide data sufficiency."""
     history, errors = data_sources.fetch_history(use_cache=not state.get("no_cache", False))
     for e in errors:
-        state.setdefault("warnings", []).append(f"history gap: {e}")
+        state.setdefault("warnings", []).append(f"فجوة في بيانات السجل: {e}")
     frame, league_state = build_training_frame(history)
     frame.to_pickle(TRAIN_PKL)
     with STATE_PKL.open("wb") as fh:
@@ -85,7 +86,7 @@ def analyst_agent(state: dict) -> dict:
         row = {**fx, "features": feats, "sufficient_history": sufficient}
         if not sufficient:
             row["abstain_reason"] = (
-                f"insufficient history (home {feats['home_matches']}, away {feats['away_matches']} matches)"
+                f"سجلّ غير كافٍ (المضيف {feats['home_matches']}، الضيف {feats['away_matches']} مباريات)"
             )
         rows.append(row)
     FIXTURE_FEATURES_JSON.write_text(json.dumps(rows, indent=2, default=str))
@@ -159,19 +160,19 @@ def _factors(f: dict) -> list[str]:
     out = []
     ed = f["elo_diff"]
     if abs(ed) >= 40:
-        side = "Home" if ed > 0 else "Away"
-        out.append(f"{side} side rated {abs(ed):.0f} Elo points stronger (incl. home edge)")
+        side = "المضيف" if ed > 0 else "الضيف"
+        out.append(f"{side} أقوى بـ {abs(ed):.0f} نقطة إيلو (شاملة أفضلية اللعب على أرضه)")
     form_gap = f["home_form_pts"] - f["away_form_pts"]
     if abs(form_gap) >= 0.8:
-        side = "Home" if form_gap > 0 else "Away"
-        out.append(f"{side} form better over last 5 ({f['home_form_pts']:.1f} vs {f['away_form_pts']:.1f} pts/game)")
+        side = "المضيف" if form_gap > 0 else "الضيف"
+        out.append(f"فورما {side} أفضل في آخر 5 مباريات ({f['home_form_pts']:.1f} مقابل {f['away_form_pts']:.1f} نقطة لكل مباراة)")
     attack = f["home_gf_avg"] - f["away_ga_avg"]
     if attack >= 0.5:
-        out.append(f"Home attack ({f['home_gf_avg']:.1f} gf/g) vs away defense ({f['away_ga_avg']:.1f} ga/g)")
+        out.append(f"هجوم المضيف ({f['home_gf_avg']:.1f} هدف/مباراة) أمام دفاع الضيف ({f['away_ga_avg']:.1f} هدف/مباراة)")
     elif attack <= -0.5:
-        out.append(f"Away defense concedes less ({f['away_ga_avg']:.1f} ga/g) than home scores ({f['home_gf_avg']:.1f} gf/g)")
+        out.append(f"دفاع الضيف يستقبل أقل ({f['away_ga_avg']:.1f}) مما يسجّل المضيف ({f['home_gf_avg']:.1f})")
     if not out:
-        out.append("Teams closely matched on rating, form and goal averages")
+        out.append("الفريقان متقاربان في التقييم والفورما ومعدلات الأهداف")
     return out
 
 
@@ -197,13 +198,13 @@ def critic_agent(state: dict) -> dict:
             critiques.append(f"low coverage {coverage:.0%} of fixtures")
             # not fixable by retraining (data sufficiency), so warn instead
             state.setdefault("warnings", []).append(
-                f"only {len(predicted)}/{len(fixtures)} fixtures had enough history to predict")
+                f"فقط {len(predicted)}/{len(fixtures)} من المباريات كان لديها سجل كافٍ للتوقع")
 
     metrics = state.get("model_metrics", {})
     hold = metrics.get("holdout") or {}
     if hold and hold.get("log_loss", 0) > LOGLOSS_WARNING:
         state.setdefault("warnings", []).append(
-            f"holdout log-loss {hold['log_loss']} above {LOGLOSS_WARNING} threshold")
+            f"الخسارة اللوغاريتمية خارج العينة {hold['log_loss']} أعلى من الحد {LOGLOSS_WARNING}")
 
     state["critiques"] = critiques
     state["critic_directives"] = directives
@@ -219,7 +220,7 @@ def route_after_critic(state: dict) -> str:
     if state.get("critiques") and state.get("retries", 0) < MAX_CRITIC_RETRIES:
         return "predictor"
     if state.get("critiques"):
-        state.setdefault("warnings", []).append("critic issues unresolved after retries; publishing with warnings")
+        state.setdefault("warnings", []).append("مشاكل الناقد لم تُحلّ بعد إعادة المحاولة؛ يتم النشر مع تحذيرات")
     return "pundit"
 
 
@@ -231,13 +232,13 @@ def pundit_agent(state: dict) -> dict:
     lines = []
     if predicted:
         best = max(predicted, key=lambda p: max(p["p_home"], p["p_draw"], p["p_away"]))
-        pick_team = {"home": best["home"], "draw": "a draw", "away": best["away"]}[best["pick"]]
+        pick_team = {"home": team_ar(best["home"]), "draw": "التعادل", "away": team_ar(best["away"])}[best["pick"]]
         prob = max(best["p_home"], best["p_draw"], best["p_away"])
         lines.append(
-            f"{len(predicted)} matches predicted across {len({p['league_code'] for p in predicted})} leagues. "
-            f"Strongest lean: {best['home']} vs {best['away']} - {pick_team} at {prob:.0%}.")
+            f"{len(predicted)} مباريات متوقعة عبر {len({p['league_code'] for p in predicted})} دوريات. "
+            f"أقوى ترجيح: {team_ar(best['home'])} ضد {team_ar(best['away'])} - {pick_team} بنسبة {prob:.0%}.")
     else:
-        lines.append("No predictions could be produced for this run.")
+        lines.append("تعذّر إنتاج أي توقعات في هذا التشغيل.")
     if state.get("scout_notes"):
         lines.append(" / ".join(state["scout_notes"]))
     state["summary"] = lines
