@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-11-22T22:35:34.959939+00:00",
+  "run_date": "2026-11-23",
+  "fixture_date": "2026-11-23",
+  "predictions": [
+    {
+      "league_code": "E0",
+      "league_name": "Premier League",
+      "date": "2026-11-23",
+      "kickoff": "20:00",
+      "home": "Brentford",
+      "away": "Everton",
+      "p_home": 0.4787,
+      "p_draw": 0.2653,
+      "p_away": 0.2559,
+      "pick": "home",
+      "confidence": "medium",
+      "factors": [
+        "Home side rated 94 Elo points stronger (incl. home edge)",
+        "Away defense concedes less (1.7 ga/g) than home scores (1.1 gf/g)"
+      ],
+      "status": "predicted"
+    },
+    {
+      "league_code": "I1",
+      "league_name": "Serie A",
+      "date": "2026-11-23",
+      "kickoff": "19:45",
+      "home": "Monza",
+      "away": "Fiorentina",
+      "p_home": 0.1858,
+      "p_draw": 0.2817,
+      "p_away": 0.5326,
+      "pick": "away",
+      "confidence": "medium",
+      "factors": [
+        "Away side rated 59 Elo points stronger (incl. home edge)"
+      ],
+      "status": "predicted"
+    },
+    {
+      "league_code": "SP1",
+      "league_name": "La Liga",
+      "date": "2026-11-23",
+      "kickoff": "20:00",
+      "home": "Levante",
+      "away": "Elche",
+      "p_home": 0.442,
+      "p_draw": 0.2662,
+      "p_away": 0.2917,
+      "pick": "home",
+      "confidence": "low",
+      "factors": [
+        "Home side rated 59 Elo points stronger (incl. home edge)",
+        "Home form better over last 5 (1.8 vs 1.0 pts/game)",
+        "Home attack (1.7 gf/g) vs away defense (1.2 ga/g)"
+      ],
+      "status": "predicted"
+    }
+  ],
+  "warnings": [],
+  "summary": [
+    "3 matches predicted across 3 leagues. Strongest lean: Monza vs Fiorentina - Fiorentina at 53%."
+  ],
+  "report": [
+    "scout: 3 fixtures for 2026-11-23 (on target date)",
+    "analyst: 7082 historical matches replayed, 3 fixtures featured",
+    "predictor: reused fresh saved model",
+    "predictor: 3 predicted, 0 abstained",
+    "critic: all checks passed",
+    "pundit: summary written"
+  ]
+}

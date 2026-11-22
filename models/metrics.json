@@ -1,0 +1,36 @@
+{
+  "trained_at": "2026-11-22T22:22:37.453174+00:00",
+  "train_matches": 5330,
+  "holdout_matches": 1752,
+  "holdout_season": "2526",
+  "classes": [
+    "A",
+    "D",
+    "H"
+  ],
+  "features": [
+    "elo_diff",
+    "home_form_pts",
+    "away_form_pts",
+    "home_gf_avg",
+    "away_gf_avg",
+    "home_ga_avg",
+    "away_ga_avg",
+    "home_matches",
+    "away_matches"
+  ],
+  "holdout": {
+    "accuracy": 0.5114,
+    "log_loss": 1.0005,
+    "brier": 0.5973
+  },
+  "baseline_majority": {
+    "log_loss": 1.0718,
+    "accuracy": 0.4401
+  },
+  "baseline_bookmaker": {
+    "n": 1752,
+    "log_loss": 0.9784,
+    "accuracy": 0.5337
+  }
+}

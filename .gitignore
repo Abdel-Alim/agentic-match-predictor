@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+# raw source data is downloaded at runtime and never redistributed
+data/cache/
+data/training_features.pkl
+data/league_state.pkl
+data/fixture_features.json

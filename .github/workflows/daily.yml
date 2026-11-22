@@ -1,0 +1,46 @@
+name: Daily match predictions
+
+on:
+  schedule:
+    # 05:30 UTC = 07:30 Cairo (winter). Also runnable manually.
+    - cron: "30 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-predictions
+  cancel-in-progress: false
+
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run the agent pipeline
+        run: python main.py
+
+      - name: Run tests
+        run: python -m pytest tests/ -q
+
+      - name: Commit updated site and model
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/ models/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Daily predictions $(date -u +%Y-%m-%d)"
+            git push
+          fi
