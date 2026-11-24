@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-11-24T16:10:00.588288+00:00",
+  "run_date": "2026-11-24",
+  "fixture_date": "2026-11-24",
+  "predictions": [],
+  "warnings": [],
+  "summary": [
+    "تعذّر إنتاج أي توقعات في هذا التشغيل.",
+    "لا توجد مباريات اليوم ولا ضمن نافذة البحث القادمة"
+  ],
+  "report": [
+    "scout: 0 fixtures for 2026-11-24 (لا توجد مباريات اليوم ولا ضمن نافذة البحث القادمة)",
+    "analyst: 7082 historical matches replayed, 0 fixtures featured",
+    "predictor: retrained (model age 41.8h > 20h), 5330 train / 1752 holdout",
+    "predictor: 0 predicted, 0 abstained",
+    "critic: all checks passed",
+    "pundit: summary written"
+  ]
+}

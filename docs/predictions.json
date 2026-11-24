@@ -1,65 +1,11 @@
 {
-  "generated_at": "2026-11-23T16:21:39.639791+00:00",
-  "run_date": "2026-11-23",
-  "fixture_date": "2026-11-23",
-  "predictions": [
-    {
-      "league_code": "E0",
-      "league_name": "Premier League",
-      "date": "2026-11-23",
-      "kickoff": "20:00",
-      "home": "Brentford",
-      "away": "Everton",
-      "p_home": 0.4787,
-      "p_draw": 0.2653,
-      "p_away": 0.2559,
-      "pick": "home",
-      "confidence": "medium",
-      "factors": [
-        "المضيف أقوى بـ 94 نقطة إيلو (شاملة أفضلية اللعب على أرضه)",
-        "دفاع الضيف يستقبل أقل (1.7) مما يسجّل المضيف (1.1)"
-      ],
-      "status": "predicted"
-    },
-    {
-      "league_code": "I1",
-      "league_name": "Serie A",
-      "date": "2026-11-23",
-      "kickoff": "19:45",
-      "home": "Monza",
-      "away": "Fiorentina",
-      "p_home": 0.1858,
-      "p_draw": 0.2817,
-      "p_away": 0.5326,
-      "pick": "away",
-      "confidence": "medium",
-      "factors": [
-        "الضيف أقوى بـ 59 نقطة إيلو (شاملة أفضلية اللعب على أرضه)"
-      ],
-      "status": "predicted"
-    },
-    {
-      "league_code": "SP1",
-      "league_name": "La Liga",
-      "date": "2026-11-23",
-      "kickoff": "20:00",
-      "home": "Levante",
-      "away": "Elche",
-      "p_home": 0.442,
-      "p_draw": 0.2662,
-      "p_away": 0.2917,
-      "pick": "home",
-      "confidence": "low",
-      "factors": [
-        "المضيف أقوى بـ 59 نقطة إيلو (شاملة أفضلية اللعب على أرضه)",
-        "فورما المضيف أفضل في آخر 5 مباريات (1.8 مقابل 1.0 نقطة لكل مباراة)",
-        "هجوم المضيف (1.7 هدف/مباراة) أمام دفاع الضيف (1.2 هدف/مباراة)"
-      ],
-      "status": "predicted"
-    }
-  ],
+  "generated_at": "2026-11-24T16:10:00.588288+00:00",
+  "run_date": "2026-11-24",
+  "fixture_date": "2026-11-24",
+  "predictions": [],
   "warnings": [],
   "summary": [
-    "3 مباريات متوقعة عبر 3 دوريات. أقوى ترجيح: مونزا ضد فيورنتينا - فيورنتينا بنسبة 53%."
+    "تعذّر إنتاج أي توقعات في هذا التشغيل.",
+    "لا توجد مباريات اليوم ولا ضمن نافذة البحث القادمة"
   ]
 }
