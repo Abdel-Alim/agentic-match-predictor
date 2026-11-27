@@ -1,0 +1,99 @@
+{
+  "generated_at": "2026-11-27T15:28:22.974896+00:00",
+  "run_date": "2026-11-27",
+  "fixture_date": "2026-11-27",
+  "predictions": [
+    {
+      "league_code": "D1",
+      "league_name": "Bundesliga",
+      "date": "2026-11-27",
+      "kickoff": "19:30",
+      "home": "Werder Bremen",
+      "away": "M'gladbach",
+      "p_home": 0.3609,
+      "p_draw": 0.2774,
+      "p_away": 0.3617,
+      "pick": "away",
+      "confidence": "low",
+      "factors": [
+        "فورما الضيف أفضل في آخر 5 مباريات (0.8 مقابل 1.6 نقطة لكل مباراة)"
+      ],
+      "status": "predicted"
+    },
+    {
+      "league_code": "E0",
+      "league_name": "Premier League",
+      "date": "2026-11-27",
+      "kickoff": "20:00",
+      "home": "Nott'm Forest",
+      "away": "Chelsea",
+      "p_home": 0.5257,
+      "p_draw": 0.2146,
+      "p_away": 0.2596,
+      "pick": "home",
+      "confidence": "medium",
+      "factors": [
+        "المضيف أقوى بـ 48 نقطة إيلو (شاملة أفضلية اللعب على أرضه)",
+        "فورما المضيف أفضل في آخر 5 مباريات (1.6 مقابل 0.8 نقطة لكل مباراة)"
+      ],
+      "status": "predicted"
+    },
+    {
+      "league_code": "F1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-27",
+      "kickoff": "19:45",
+      "home": "Brest",
+      "away": "Paris FC",
+      "p_home": 0.3412,
+      "p_draw": 0.3,
+      "p_away": 0.3589,
+      "pick": "away",
+      "confidence": "low",
+      "factors": [
+        "المضيف أقوى بـ 50 نقطة إيلو (شاملة أفضلية اللعب على أرضه)",
+        "فورما الضيف أفضل في آخر 5 مباريات (0.4 مقابل 1.8 نقطة لكل مباراة)"
+      ],
+      "status": "predicted"
+    },
+    {
+      "league_code": "I1",
+      "league_name": "Serie A",
+      "date": "2026-11-27",
+      "kickoff": "19:45",
+      "home": "Venezia",
+      "away": "Bologna",
+      "p_home": 0.256,
+      "p_draw": 0.266,
+      "p_away": 0.478,
+      "pick": "away",
+      "confidence": "medium",
+      "factors": [
+        "فورما الضيف أفضل في آخر 5 مباريات (0.8 مقابل 1.6 نقطة لكل مباراة)"
+      ],
+      "status": "predicted"
+    },
+    {
+      "league_code": "SP1",
+      "league_name": "La Liga",
+      "date": "2026-11-27",
+      "kickoff": "20:00",
+      "home": "Levante",
+      "away": "Santander",
+      "status": "abstained",
+      "reason": "سجلّ غير كافٍ (المضيف 10، الضيف 0 مباريات)"
+    }
+  ],
+  "warnings": [],
+  "summary": [
+    "4 مباريات متوقعة عبر 4 دوريات. أقوى ترجيح: نوتينغهام فورست ضد تشيلسي - نوتينغهام فورست بنسبة 53%."
+  ],
+  "report": [
+    "scout: 5 fixtures for 2026-11-27 (on target date)",
+    "analyst: 7082 historical matches replayed, 5 fixtures featured",
+    "predictor: retrained (model age 23.9h > 20h), 5330 train / 1752 holdout",
+    "predictor: 4 predicted, 1 abstained",
+    "critic: all checks passed",
+    "pundit: summary written"
+  ]
+}
