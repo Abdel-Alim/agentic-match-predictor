@@ -1,0 +1,340 @@
+{
+  "generated_at": "2026-11-28T14:27:08.656995+00:00",
+  "run_date": "2026-11-28",
+  "fixture_date": "2026-11-28",
+  "predictions": [
+    {
+      "league_code": "D1",
+      "league_name": "Bundesliga",
+      "date": "2026-11-28",
+      "kickoff": "14:30",
+      "home": "Hamburg",
+      "away": "Bayern Munich",
+      "p_home": 0.0533,
+      "p_draw": 0.1241,
+      "p_away": 0.8225,
+      "pick": "away",
+      "confidence": "high",
+      "factors": [
+        "الضيف أقوى بـ 216 نقطة إيلو (شاملة أفضلية اللعب على أرضه)",
+        "فورما الضيف أفضل في آخر 5 مباريات (1.4 مقابل 2.6 نقطة لكل مباراة)"
+      ],
+      "status": "predicted"
+    },
+    {
+      "league_code": "D1",
+      "league_name": "Bundesliga",
+      "date": "2026-11-28",
+      "kickoff": "14:30",
+      "home": "Mainz",
+      "away": "Union Berlin",
+      "p_home": 0.541,
+      "p_draw": 0.2442,
+      "p_away": 0.2148,
+      "pick": "home",
+      "confidence": "medium",
+      "factors": [
+        "المضيف أقوى بـ 111 نقطة إيلو (شاملة أفضلية اللعب على أرضه)"
+      ],
+      "status": "predicted"
+    },
+    {
+      "league_code": "D1",
+      "league_name": "Bundesliga",
+      "date": "2026-11-28",
+      "kickoff": "17:30",
+      "home": "Stuttgart",
+      "away": "Ein Frankfurt",
+      "p_home": 0.6304,
+      "p_draw": 0.2121,
+      "p_away": 0.1574,
+      "pick": "home",
+      "confidence": "high",
+      "factors": [
+        "المضيف أقوى بـ 145 نقطة إيلو (شاملة أفضلية اللعب على أرضه)",
+        "هجوم المضيف (2.3 هدف/مباراة) أمام دفاع الضيف (1.6 هدف/مباراة)"
+      ],
+      "status": "predicted"
+    },
+    {
+      "league_code": "E0",
+      "league_name": "Premier League",
+      "date": "2026-11-28",
+      "kickoff": "15:00",
+      "home": "Man United",
+      "away": "Brentford",
+      "p_home": 0.5905,
+      "p_draw": 0.2444,
+      "p_away": 0.165,
+      "pick": "home",
+      "confidence": "high",
+      "factors": [
+        "المضيف أقوى بـ 140 نقطة إيلو (شاملة أفضلية اللعب على أرضه)",
+        "فورما المضيف أفضل في آخر 5 مباريات (2.6 مقابل 1.0 نقطة لكل مباراة)",
+        "هجوم المضيف (1.9 هدف/مباراة) أمام دفاع الضيف (1.2 هدف/مباراة)"
+      ],
+      "status": "predicted"
+    },
+    {
+      "league_code": "E0",
+      "league_name": "Premier League",
+      "date": "2026-11-28",
+      "kickoff": "17:30",
+      "home": "Ipswich",
+      "away": "Aston Villa",
+      "p_home": 0.1431,
+      "p_draw": 0.2119,
+      "p_away": 0.645,
+      "pick": "away",
+      "confidence": "high",
+      "factors": [
+        "الضيف أقوى بـ 110 نقطة إيلو (شاملة أفضلية اللعب على أرضه)",
+        "فورما الضيف أفضل في آخر 5 مباريات (0.2 مقابل 1.4 نقطة لكل مباراة)",
+        "دفاع الضيف يستقبل أقل (1.9) مما يسجّل المضيف (1.0)"
+      ],
+      "status": "predicted"
+    },
+    {
+      "league_code": "F1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-28",
+      "kickoff": "16:15",
+      "home": "Angers",
+      "away": "Lens",
+      "p_home": 0.1351,
+      "p_draw": 0.2175,
+      "p_away": 0.6475,
+      "pick": "away",
+      "confidence": "high",
+      "factors": [
+        "الضيف أقوى بـ 106 نقطة إيلو (شاملة أفضلية اللعب على أرضه)",
+        "فورما الضيف أفضل في آخر 5 مباريات (0.6 مقابل 1.6 نقطة لكل مباراة)",
+        "دفاع الضيف يستقبل أقل (1.4) مما يسجّل المضيف (0.7)"
+      ],
+      "status": "predicted"
+    },
+    {
+      "league_code": "F1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-28",
+      "kickoff": "19:45",
+      "home": "Le Havre",
+      "away": "Strasbourg",
+      "p_home": 0.2606,
+      "p_draw": 0.2514,
+      "p_away": 0.488,
+      "pick": "away",
+      "confidence": "medium",
+      "factors": [
+        "فورما الضيف أفضل في آخر 5 مباريات (1.2 مقابل 2.0 نقطة لكل مباراة)"
+      ],
+      "status": "predicted"
+    },
+    {
+      "league_code": "F1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-28",
+      "kickoff": "19:45",
+      "home": "Nice",
+      "away": "Troyes",
+      "p_home": 0.4362,
+      "p_draw": 0.2907,
+      "p_away": 0.2732,
+      "pick": "home",
+      "confidence": "low",
+      "factors": [
+        "المضيف أقوى بـ 74 نقطة إيلو (شاملة أفضلية اللعب على أرضه)",
+        "دفاع الضيف يستقبل أقل (2.0) مما يسجّل المضيف (0.7)"
+      ],
+      "status": "predicted"
+    },
+    {
+      "league_code": "F1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-28",
+      "kickoff": "19:45",
+      "home": "Paris SG",
+      "away": "Lorient",
+      "p_home": 0.7416,
+      "p_draw": 0.185,
+      "p_away": 0.0734,
+      "pick": "home",
+      "confidence": "high",
+      "factors": [
+        "المضيف أقوى بـ 247 نقطة إيلو (شاملة أفضلية اللعب على أرضه)",
+        "هجوم المضيف (2.1 هدف/مباراة) أمام دفاع الضيف (1.3 هدف/مباراة)"
+      ],
+      "status": "predicted"
+    },
+    {
+      "league_code": "I1",
+      "league_name": "Serie A",
+      "date": "2026-11-28",
+      "kickoff": "14:00",
+      "home": "Frosinone",
+      "away": "Parma",
+      "p_home": 0.4089,
+      "p_draw": 0.2907,
+      "p_away": 0.3004,
+      "pick": "home",
+      "confidence": "low",
+      "factors": [
+        "المضيف أقوى بـ 51 نقطة إيلو (شاملة أفضلية اللعب على أرضه)"
+      ],
+      "status": "predicted"
+    },
+    {
+      "league_code": "I1",
+      "league_name": "Serie A",
+      "date": "2026-11-28",
+      "kickoff": "17:00",
+      "home": "Torino",
+      "away": "Lazio",
+      "p_home": 0.3459,
+      "p_draw": 0.2525,
+      "p_away": 0.4016,
+      "pick": "away",
+      "confidence": "low",
+      "factors": [
+        "الفريقان متقاربان في التقييم والفورما ومعدلات الأهداف"
+      ],
+      "status": "predicted"
+    },
+    {
+      "league_code": "I1",
+      "league_name": "Serie A",
+      "date": "2026-11-28",
+      "kickoff": "19:45",
+      "home": "Inter",
+      "away": "Genoa",
+      "p_home": 0.8153,
+      "p_draw": 0.1441,
+      "p_away": 0.0406,
+      "pick": "home",
+      "confidence": "high",
+      "factors": [
+        "المضيف أقوى بـ 298 نقطة إيلو (شاملة أفضلية اللعب على أرضه)",
+        "فورما المضيف أفضل في آخر 5 مباريات (1.8 مقابل 0.4 نقطة لكل مباراة)",
+        "هجوم المضيف (2.5 هدف/مباراة) أمام دفاع الضيف (1.1 هدف/مباراة)"
+      ],
+      "status": "predicted"
+    },
+    {
+      "league_code": "SP1",
+      "league_name": "La Liga",
+      "date": "2026-11-28",
+      "kickoff": "13:00",
+      "home": "Betis",
+      "away": "Vallecano",
+      "p_home": 0.5119,
+      "p_draw": 0.2756,
+      "p_away": 0.2125,
+      "pick": "home",
+      "confidence": "medium",
+      "factors": [
+        "المضيف أقوى بـ 112 نقطة إيلو (شاملة أفضلية اللعب على أرضه)",
+        "هجوم المضيف (1.6 هدف/مباراة) أمام دفاع الضيف (1.0 هدف/مباراة)"
+      ],
+      "status": "predicted"
+    },
+    {
+      "league_code": "SP1",
+      "league_name": "La Liga",
+      "date": "2026-11-28",
+      "kickoff": "17:30",
+      "home": "Elche",
+      "away": "Ath Madrid",
+      "p_home": 0.2578,
+      "p_draw": 0.2305,
+      "p_away": 0.5117,
+      "pick": "away",
+      "confidence": "medium",
+      "factors": [
+        "الضيف أقوى بـ 58 نقطة إيلو (شاملة أفضلية اللعب على أرضه)",
+        "فورما الضيف أفضل في آخر 5 مباريات (1.0 مقابل 1.8 نقطة لكل مباراة)",
+        "دفاع الضيف يستقبل أقل (1.9) مما يسجّل المضيف (1.3)"
+      ],
+      "status": "predicted"
+    },
+    {
+      "league_code": "SP1",
+      "league_name": "La Liga",
+      "date": "2026-11-28",
+      "kickoff": "20:00",
+      "home": "Real Madrid",
+      "away": "Alaves",
+      "p_home": 0.7311,
+      "p_draw": 0.1985,
+      "p_away": 0.0704,
+      "pick": "home",
+      "confidence": "high",
+      "factors": [
+        "المضيف أقوى بـ 275 نقطة إيلو (شاملة أفضلية اللعب على أرضه)",
+        "فورما المضيف أفضل في آخر 5 مباريات (2.4 مقابل 1.4 نقطة لكل مباراة)"
+      ],
+      "status": "predicted"
+    },
+    {
+      "league_code": "D1",
+      "league_name": "Bundesliga",
+      "date": "2026-11-28",
+      "kickoff": "14:30",
+      "home": "FC Koln",
+      "away": "Elversberg",
+      "status": "abstained",
+      "reason": "سجلّ غير كافٍ (المضيف 10، الضيف 0 مباريات)"
+    },
+    {
+      "league_code": "D1",
+      "league_name": "Bundesliga",
+      "date": "2026-11-28",
+      "kickoff": "14:30",
+      "home": "Paderborn",
+      "away": "Schalke 04",
+      "status": "abstained",
+      "reason": "سجلّ غير كافٍ (المضيف 0، الضيف 10 مباريات)"
+    },
+    {
+      "league_code": "E0",
+      "league_name": "Premier League",
+      "date": "2026-11-28",
+      "kickoff": "15:00",
+      "home": "Leeds",
+      "away": "Coventry",
+      "status": "abstained",
+      "reason": "سجلّ غير كافٍ (المضيف 10، الضيف 0 مباريات)"
+    },
+    {
+      "league_code": "F1",
+      "league_name": "Ligue 1",
+      "date": "2026-11-28",
+      "kickoff": "19:45",
+      "home": "Le Mans",
+      "away": "Lille",
+      "status": "abstained",
+      "reason": "سجلّ غير كافٍ (المضيف 0، الضيف 10 مباريات)"
+    },
+    {
+      "league_code": "SP1",
+      "league_name": "La Liga",
+      "date": "2026-11-28",
+      "kickoff": "15:15",
+      "home": "Malaga",
+      "away": "Ath Bilbao",
+      "status": "abstained",
+      "reason": "سجلّ غير كافٍ (المضيف 0، الضيف 10 مباريات)"
+    }
+  ],
+  "warnings": [],
+  "summary": [
+    "15 مباريات متوقعة عبر 5 دوريات. أقوى ترجيح: هامبورغ ضد بايرن ميونخ - بايرن ميونخ بنسبة 82%."
+  ],
+  "report": [
+    "scout: 20 fixtures for 2026-11-28 (on target date)",
+    "analyst: 7082 historical matches replayed, 20 fixtures featured",
+    "predictor: retrained (model age 23.0h > 20h), 5330 train / 1752 holdout",
+    "predictor: 15 predicted, 5 abstained",
+    "critic: all checks passed",
+    "pundit: summary written"
+  ]
+}
